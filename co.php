@@ -5,8 +5,8 @@ error_reporting(-1);
 $mssqldriver = '{SQL Server}';
 $hostname='172.16.3.101';
 $dbname='prace';
-$username='sa';
-$password='Wapro3000';
+$username=''; // usuniete
+$password=''; // usuniete
 $pdo = new PDO("odbc:Driver=$mssqldriver;Server=$hostname;Database=$dbname", $username, $password);
 $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
